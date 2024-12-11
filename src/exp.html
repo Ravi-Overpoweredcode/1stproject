@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <div id="firstdiv" class="h-auto grid grid-cols-4 max-md:grid-cols-2 max-lg:grid-cols-2 xl:grid-cols-4 max-sm:grid-cols-1">
+        <div class="relative group">
+            <div class="overflow-hidden">
+                <img id="firstimage" class="transition-transform transform duration-300" src="CONFERENCE.png" alt="">
+            </div>
+           
+            <div id="color" class=" absolute bg-blue-500 w-full h-full top-0 opacity-80 group-hover:opacity-40" onmouseover="scaleimage('firstimage'); hidetext('firsttext'); showtext('secondtext')" onmouseout="resetscale('firstimage'); hidetext('secondtext'); showtext('firsttext')"></div>
+
+            <div id="textdiv" class="absolute" onmouseover="scaleimage('firstimage'); hidetext('firsttext'); showtext('secondtext')" onmouseout="resetscale('firstimage'); hidetext('secondtext'); showtext('firsttext')">
+                <div id="firsttext" class=" translate-x-22 -translate-y-56">
+                    <div class="flex justify-center flex-col items-center">
+                        <p class="text-white text-4xl ">ANNUAL</p>
+                        <p class="text-white text-4xl ">CONFERENCE</p>
+                    </div>
+                </div>
+                <div id="secondtext" class="hidden">
+                    <p class="-translate-y-56 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum asperiores dicta explicabo? Tenetur inventore, ipsam ut sequi magnam voluptatem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="relative group">
+            <div class="overflow-hidden">
+                <img id="secondimage" class="transition-transform transform duration-300" src="ONLINELEARNING.png" alt="">
+            </div>
+           
+            <div id="color" class=" absolute bg-orange-500 w-full h-full top-0 opacity-80 group-hover:opacity-40" onmouseover="scaleimage('secondimage'); hidetext('thirdtext'); showtext('fourthtext')" onmouseout="resetscale('secondimage'); hidetext('fourthtext'); showtext('thirdtext')"></div>
+
+            <div id="textdiv" class="absolute" onmouseover="scaleimage('secondimage'); hidetext('thirdtext'); showtext('fourthtext')" onmouseout="resetscale('secondimage'); hidetext('fourthtext'); showtext('thirdtext')">
+                <div id="thirdtext" class=" translate-x-12 -translate-y-56">
+                    <div class="flex justify-center flex-col items-center">
+                        <p class="text-white text-4xl ">ONLINE LEARNING</p>
+                        <p class="text-white text-4xl ">CENTER</p>
+                    </div>
+                </div>
+                <div id="fourthtext" class="hidden">
+                    <p class="-translate-y-56 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum asperiores dicta explicabo? Tenetur inventore, ipsam ut sequi magnam voluptatem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="relative group">
+            <div class="overflow-hidden">
+                <img id="thirdimage" class="transition-transform transform duration-300" src="GETCERTIFIED.png" alt="">
+            </div>
+           
+            <div id="color" class=" absolute bg-yellow-500 w-full h-full top-0 opacity-80 group-hover:opacity-40" onmouseover="scaleimage('thirdimage'); hidetext('fifthtext'); showtext('sixthtext')" onmouseout="resetscale('thirdimage'); hidetext('sixthtext'); showtext('fifthtext')"></div>
+
+            <div id="textdiv" class="absolute" onmouseover="scaleimage('thirdimage'); hidetext('fifthtext'); showtext('sixthtext')" onmouseout="resetscale('thirdimage'); hidetext('sixthtext'); showtext('fifthtext')">
+                <div id="fifthtext" class=" translate-x-18 -translate-y-56">
+                    <div class="flex justify-center flex-col items-center">
+                        <p class="text-white text-4xl ">GET CERTIFIED</p>
+                    </div>
+                </div>
+                <div id="sixthtext" class="hidden">
+                    <p class="-translate-y-56 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum asperiores dicta explicabo? Tenetur inventore, ipsam ut sequi magnam voluptatem.</p>
+                </div>
+            </div>
+        </div>
+        <div class="relative group">
+            <div class="overflow-hidden">
+                <img id="fourthimage" class="transition-transform transform duration-300" src="JOINIAFN.png" alt="">
+            </div>
+           
+            <div id="color" class=" absolute bg-red-500 w-full h-full top-0 opacity-80 group-hover:opacity-40" onmouseover="scaleimage('fourthimage'); hidetext('seventext'); showtext('eighttext')" onmouseout="resetscale('fourthimage'); hidetext('eighttext'); showtext('seventext')"></div>
+
+            <div id="textdiv" class="absolute" onmouseover="scaleimage('fourthimage'); hidetext('seventext'); showtext('eighttext')" onmouseout="resetscale('fourthimage'); hidetext('eighttext'); showtext('seventext')">
+                <div id="seventext" class=" translate-x-18 -translate-y-56">
+                    <div class="flex justify-center flex-col items-center">
+                        <p class="text-white text-4xl ">GET CERTIFIED</p>
+                    </div>
+                </div>
+                <div id="eighttext" class="hidden">
+                    <p class="-translate-y-56 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum asperiores dicta explicabo? Tenetur inventore, ipsam ut sequi magnam voluptatem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="2nddiv" class="h-28 w-screen bg-gray-300">
+
+    </div>
+    <script>
+        function scaleimage(id)
+        {
+            document.getElementById(id).classList.add('scale-150');
+        }
+        function resetscale(id) {
+            document.getElementById(id).classList.remove('scale-150');
+        }
+        function hidetext(id)
+        {
+            document.getElementById(id).classList.add('hidden')
+        }
+        function showtext(id)
+        {
+            document.getElementById(id).classList.remove('hidden')
+        }
+    </script>
+</body>
+</html>

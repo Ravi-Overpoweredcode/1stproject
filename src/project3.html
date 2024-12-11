@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div>
+            <nav
+                class="xl:flex xl:gap-x-6 xl:justify-center xl:items-center max-xl:justify-start max-xl:flex max-xl:flex-col">
+                <div class="shrink-0 xl:basis-40.5875 mr-10 ">
+                    <img class="object-contain xl:w-40.5875 xl:h-18.2875 sm:w-79.2875 sm:h-35.725" src="nursing1.png"
+                        alt="image" loading="lazy">
+                </div>
+                <!-- max-xl:hidden -->
+                <div class="nav-links xl:w-350  max-xl:translate-y-16 xl:block  hidden">
+                    <ul
+                        class="xl:flex xl:grid-cols-56 max-xl:absolute max-xl:bg-gradient-to-r from-cyan-400 to-cyan-300 max-xl:w-full cursor-pointer">
+                        <li class="xl:px-5 xl:py-1 hover:text-white  max-xl:border-y-1 max-xl:pl-3 max-xl:py-3 hover:bg-gradient-to-r from-cyan-200 to-cyan-600"
+                            onmouseover="showMenu('first')" onmouseout="hideMenu('first')">ABOUT</li>
+                        <li class="xl:px-5 xl:py-1 hover:text-white  max-xl:border-y-1 max-xl:pl-3 max-xl:py-3 hover:bg-gradient-to-r from-cyan-600 to-cyan-600"
+                            onmouseover="showMenu('second')" onmouseout="hideMenu('second')">EDUCATION</li>
+                        <li class="xl:px-5 xl:py-1 hover:text-white  max-xl:border-y-1 max-xl:pl-3 max-xl:py-3 hover:bg-gradient-to-r from-cyan-600 to-cyan-600"
+                            onmouseover="showMenu('third')" onmouseout="hideMenu('third')">MEMBERSHIP</li>
+                        <li class="xl:px-5 xl:py-1 hover:text-white  max-xl:border-y-1 max-xl:pl-3 max-xl:py-3 hover:bg-gradient-to-r from-cyan-600 to-cyan-600"
+                            onmouseover="showMenu('fourth')" onmouseout="hideMenu('fourth')">CERTIFICATION</li>
+                        <li class="xl:px-5 xl:py-1 hover:text-white  max-xl:border-y-1 max-xl:pl-3 max-xl:py-3 hover:bg-gradient-to-r from-cyan-600 to-cyan-600"
+                            onmouseover="showMenu('fifth')" onmouseout="hideMenu('fifth')">RESOURCES</li>
+                        <li class="xl:px-5 xl:py-1 hover:text-white  max-xl:border-y-1 max-xl:pl-3 max-xl:py-3 hover:bg-gradient-to-r from-cyan-600 to-cyan-600"
+                            onmouseover="showMenu('sixth')" onmouseout="hideMenu('sixth')">COMMUNICATIONS</li>
+                        <li class="xl:px-5 xl:py-1 hover:text-white  max-xl:border-y-1 max-xl:pl-3 max-xl:py-3 hover:bg-gradient-to-r from-cyan-600 to-cyan-600"
+                            onmouseover="showMenu('seven')" onmouseout="hideMenu('seven')">EVENTS</li>
+                        <li class="xl:px-5 xl:py-1 hover:text-white  max-xl:border-y-1 max-xl:pl-3 max-xl:py-3 hover:bg-gradient-to-r from-cyan-600 to-cyan-600"
+                            onmouseover="showMenu('eight')" onmouseout="hideMenu('eight')">CONTACT US</li>
+                        <li class="xl:hidden max-xl:border-y-1 max-xl:pl-3 max-xl:py-3">MY ACCOUNT</li>
+                    </ul>
+                </div>
+                <div id="first" class="drop absolute left-56.50 top-6 w-40 hidden">
+                    <span class="pr-5 py-1 bg-gradient-to-r from-cyan-500 to-cyan-500 text-white pl-5">ABOUT</span>
+                    <ul class="flex flex-col bg-gradient-to-r from-cyan-700 to-cyan-700">
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            accessories</li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">jewelry
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">shirts
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            underwear</li>
+                    </ul>
+                </div>
+                <div id="second" class="drop absolute left-79.35 top-6 w-40 hidden">
+                    <span class="pr-5 py-1 bg-gradient-to-r from-cyan-500 to-cyan-500 text-white pl-5">EDUCATION</span>
+                    <ul class="flex flex-col bg-gradient-to-r from-cyan-700 to-cyan-700">
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            accessories</li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">jewelry
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">shirts
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            underwear</li>
+                    </ul>
+                </div>
+                <div id="third" class="drop absolute left-110.85 top-6 w-40 hidden">
+                    <span class="pr-5 py-1 bg-gradient-to-r from-cyan-500 to-cyan-500 text-white pl-5">MEMBERSHIP</span>
+                    <ul class="flex flex-col bg-gradient-to-r from-cyan-700 to-cyan-700">
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            accessories</li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">jewelry
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">shirts
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            underwear</li>
+                    </ul>
+                </div>
+                <div id="fourth" class="drop absolute left-145 top-6 w-40 hidden">
+                    <span
+                        class="pr-5 py-1 bg-gradient-to-r from-cyan-500 to-cyan-500 text-white pl-5">CERTIFICATION</span>
+                    <ul class="flex flex-col bg-gradient-to-r from-cyan-700 to-cyan-700">
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            accessories</li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">jewelry
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">shirts
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            underwear</li>
+                    </ul>
+                </div>
+                <div id="fifth" class="drop absolute left-181.85 top-6 w-40 hidden">
+                    <span class="pr-5 py-1 bg-gradient-to-r from-cyan-500 to-cyan-500 text-white pl-5">RESOURCES</span>
+                    <ul class="flex flex-col bg-gradient-to-r from-cyan-700 to-cyan-700">
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            accessories</li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">jewelry
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">shirts
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            underwear</li>
+                    </ul>
+                </div>
+                <div id="sixth" class="drop absolute left-213.150 top-6 w-40 hidden">
+                    <span
+                        class="pr-5 py-1 bg-gradient-to-r from-cyan-500 to-cyan-500 text-white pl-5">COMMUNICATIONS</span>
+                    <ul class="flex flex-col bg-gradient-to-r from-cyan-700 to-cyan-700">
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            accessories</li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">jewelry
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">shirts
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            underwear</li>
+                    </ul>
+                </div>
+                <div id="seven" class="drop absolute right-83.50 w-40 top-6 hidden">
+                    <span class="pr-5 py-1 bg-gradient-to-r from-cyan-500 to-cyan-500 text-white pl-5">EVENTS</span>
+                    <ul class="flex flex-col bg-gradient-to-r from-cyan-700 to-cyan-700">
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            accessories</li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">jewelry
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">shirts
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            underwear</li>
+                    </ul>
+                </div>
+                <div id="eight" class="drop absolute right-59.850 top-6 w-40 hidden">
+                    <span class="pr-5 py-1 bg-gradient-to-r from-cyan-500 to-cyan-500 text-white pl-5">CONTACT US</span>
+                    <ul class="flex flex-col bg-gradient-to-r from-cyan-700 to-cyan-700">
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            accessories</li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">jewelry
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">shirts
+                        </li>
+                        <li class="pl-3 border-y-1 text-white hover:bg-gradient-to-r from-cyan-500 to-cyan-500">
+                            underwear</li>
+                    </ul>
+                </div>
+                <div
+                    class="text-white bg-gradient-to-r from-cyan-700 to-cyan-700 text-center p-1.50 min-w-32 mr-20 max-xl:hidden cursor-pointer">
+                    <span>MY ACCOUNT</span>
+                </div>
+            </nav>
+            <div
+                class="xl:hidden bg-transparent max-xl:w-screen bg-gradient-to-r from-cyan-700 to-cyan-700 flex items-center h-10 ">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" title="img"
+                    class="w-10 h-16 max-xl:ml-5 cursor-pointer"></ion-icon>
+                <div class="inline-block max-xl:pl-5">
+                    <span class="text-white">Menu</spanp>
+                </div>
+            </div>
+            <div class="bg-orange-600 h-6 w-full ">
+
+            </div>
+        </div>
+        <div id="slider">
+
+            <div id="firstimage"
+                class="h-120 w-full bg-[url('OIP30.png')] bg-no-repeat bg-cover bg-center pt-60 flex flex-col items-center">
+                <span class="text-7xl italic font-bold text-white">Research</span>
+                <div class="h-16 w-16 bg-orange-500 mt-2 rounded-full">
+                    <img src="down-arrow.png" class="mt-7 ml-3.5 animate-bounce">
+                </div>
+                <div class="flex absolute gap-x-350">
+                    <div onclick="showImage('thirdimage'); hideImage('firstimage')">
+                        <img src="leftarrow.png" alt="">
+                    </div>
+                    <div onclick="showImage('secondimage'); hideImage('firstimage')">
+                        <img src="rightarrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="secondimage" class="h-120 w-full bg-[url('OIP31.png')] bg-no-repeat bg-cover bg-top pt-60 hidden">
+                <div class="flex flex-col items-center">
+                    <span class="text-7xl italic font-bold text-white">Lead</span>
+                    <div class="h-16 w-16 bg-orange-500 mt-2 rounded-full">
+                        <img src="down-arrow.png" class="mt-7 ml-3.5 animate-bounce">
+                    </div>
+                    <div class="flex absolute gap-x-350">
+                        <div onclick="showImage('firstimage'); hideImage('secondimage')">
+                            <img src="leftarrow.png" alt="">
+                        </div>
+                        <div onclick="showImage('thirdimage'); hideImage('secondimage')">
+                            <img src="rightarrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="thirdimage" class="h-120 w-full bg-[url('OIP32.png')] bg-no-repeat bg-cover bg-top pt-60 hidden">
+                <div class="flex flex-col items-center">
+                    <span class="text-7xl italic font-bold text-white">Educate</span>
+                    <div class="h-16 w-16 bg-orange-500 mt-2 rounded-full">
+                        <img src="down-arrow.png" class="mt-7 ml-3.5 animate-bounce">
+                    </div>
+                    <div class="flex absolute gap-x-350">
+                        <div onclick="showImage('secondimage'); hideImage('thirdimage')">
+                            <img src="leftarrow.png" alt="">
+                        </div>
+                        <div onclick="showImage('firstimage'); hideImage('thirdimage')">
+                            <img src="rightarrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="h-auto grid grid-cols-4 mt-3 max-md:grid-cols-2 max-lg:grid-cols-2 xl:grid-cols-4 max-sm:grid-cols-1">
+            <div class="relative group">
+                <div class="overflow-hidden">
+                    <img id="1firstimage" class="transition-transform transform duration-300" src="CONFERENCE.png" alt="">
+                </div>
+               
+                <div id="color" class=" absolute bg-blue-500 w-full h-full top-0 opacity-80 group-hover:opacity-40" onmouseover="scaleimage('1firstimage'); hidetext('1firsttext'); showtext('2secondtext')" onmouseout="resetscale('1firstimage'); hidetext('2secondtext'); showtext('1firsttext')"></div>
+    
+                <div id="textdiv" class="absolute" onmouseover="scaleimage('1firstimage'); hidetext('1firsttext'); showtext('2secondtext')" onmouseout="resetscale('1firstimage'); hidetext('2secondtext'); showtext('1firsttext')">
+                    <div id="1firsttext" class=" translate-x-22 -translate-y-56">
+                        <div class="flex justify-center flex-col items-center">
+                            <p class="text-white text-4xl ">ANNUAL</p>
+                            <p class="text-white text-4xl ">CONFERENCE</p>
+                        </div>
+                    </div>
+                    <div id="2secondtext" class="hidden">
+                        <p class="-translate-y-56 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum asperiores dicta explicabo? Tenetur inventore, ipsam ut sequi magnam voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="overflow-hidden">
+                    <img id="2secondimage" class="transition-transform transform duration-300" src="ONLINELEARNING.png" alt="">
+                </div>
+               
+                <div id="color" class=" absolute bg-orange-500 w-full h-full top-0 opacity-80 group-hover:opacity-40" onmouseover="scaleimage('2secondimage'); hidetext('3thirdtext'); showtext('4fourthtext')" onmouseout="resetscale('2secondimage'); hidetext('4fourthtext'); showtext('3thirdtext')"></div>
+    
+                <div id="textdiv" class="absolute" onmouseover="scaleimage('2secondimage'); hidetext('3thirdtext'); showtext('4fourthtext')" onmouseout="resetscale('2secondimage'); hidetext('4fourthtext'); showtext('3thirdtext')">
+                    <div id="3thirdtext" class=" translate-x-12 -translate-y-56">
+                        <div class="flex justify-center flex-col items-center">
+                            <p class="text-white text-4xl ">ONLINE LEARNING</p>
+                            <p class="text-white text-4xl ">CENTER</p>
+                        </div>
+                    </div>
+                    <div id="4fourthtext" class="hidden">
+                        <p class="-translate-y-56 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum asperiores dicta explicabo? Tenetur inventore, ipsam ut sequi magnam voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="overflow-hidden">
+                    <img id="3thirdimage" class="transition-transform transform duration-300" src="GETCERTIFIED.png" alt="">
+                </div>
+               
+                <div id="color" class=" absolute bg-yellow-500 w-full h-full top-0 opacity-80 group-hover:opacity-40" onmouseover="scaleimage('3thirdimage'); hidetext('5fifthtext'); showtext('6sixthtext')" onmouseout="resetscale('3thirdimage'); hidetext('6sixthtext'); showtext('5fifthtext')"></div>
+    
+                <div id="textdiv" class="absolute" onmouseover="scaleimage('3thirdimage'); hidetext('5fifthtext'); showtext('6sixthtext')" onmouseout="resetscale('3thirdimage'); hidetext('6sixthtext'); showtext('5fifthtext')">
+                    <div id="5fifthtext" class=" translate-x-18 -translate-y-56">
+                        <div class="flex justify-center flex-col items-center">
+                            <p class="text-white text-4xl ">GET CERTIFIED</p>
+                        </div>
+                    </div>
+                    <div id="6sixthtext" class="hidden">
+                        <p class="-translate-y-56 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum asperiores dicta explicabo? Tenetur inventore, ipsam ut sequi magnam voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <div class="overflow-hidden">
+                    <img id="4fourthimage" class="transition-transform transform duration-300" src="JOINIAFN.png" alt="">
+                </div>
+               
+                <div id="color" class=" absolute bg-red-500 w-full h-full top-0 opacity-80 group-hover:opacity-40" onmouseover="scaleimage('4fourthimage'); hidetext('7seventext'); showtext('8eighttext')" onmouseout="resetscale('4fourthimage'); hidetext('8eighttext'); showtext('7seventext')"></div>
+    
+                <div id="textdiv" class="absolute" onmouseover="scaleimage('4fourthimage'); hidetext('7seventext'); showtext('8eighttext')" onmouseout="resetscale('4fourthimage'); hidetext('8eighttext'); showtext('7seventext')">
+                    <div id="7seventext" class=" translate-x-18 -translate-y-56">
+                        <div class="flex justify-center flex-col items-center">
+                            <p class="text-white text-4xl ">GET CERTIFIED</p>
+                        </div>
+                    </div>
+                    <div id="8eighttext" class="hidden">
+                        <p class="-translate-y-56 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas laborum asperiores dicta explicabo? Tenetur inventore, ipsam ut sequi magnam voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-8 w-screen bg-gray-300">
+
+        </div>
+        <!-- <div class="flex justify-center items-center pt-14">
+            <div class="h-80 w-3/4 bg-orange-300 bg-[url('Ad-3.png')] bg-no-repeat bg-cover bg-center">
+                
+            </div>
+        </div> -->
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const navlinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            navlinks.classList.toggle('hidden');
+        }
+
+        // CurrentSlideId = 1;
+        // sliderElement = document.getElementById('slider');
+        // totalSlides = sliderElement.childElementCount;
+        // function next()
+        // {
+        //     if (CurrentSlideId < totalSlides) {
+        //         CurrentSlideId++;
+        //         showslide()
+        //     }
+        // }
+        // function prev()
+        // {
+        //     if (CurrentSlideId > 1) {
+        //         CurrentSlideId--;
+        //         showslide()
+        //     }
+        // }
+        // function showslide()
+        // {
+        //     slides = document.getElementById('slider').getElementsByClassName('slip-er');
+        //     for (let index = 0; index < totalSlides; index++) {
+        //         const element = slides[index];
+        //         if (CurrentSlideId === index+1) {
+        //             element.classList.remove('hidden');
+        //         }
+        //         else
+        //         {
+        //             element.classList.add('hidden');
+        //         }
+        //     }
+        // }
+
+        function showMenu(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+        function hideMenu(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
+
+
+        //         function showDropdown(dropdownId) {
+        //     // Hide all dropdowns
+        //     const dropdowns = ['first', 'second', 'third'];
+        //     dropdowns.forEach(id => {
+        //         document.getElementById(id).classList.add('hidden');
+        //     });
+
+        //     // Show the hovered dropdown
+        //     document.getElementById(dropdownId).classList.remove('hidden');
+        // }
+
+        // function hideDropdown(dropdownId) {
+        //     // Hide the dropdown when not hovering
+        //     const dropdown = document.getElementById(dropdownId);
+        //     if (!dropdown.matches(':hover')) {
+        //         dropdown.classList.add('hidden');
+        //     }
+        // }
+
+        // Add event listeners to the dropdowns to prevent hiding when hovering over them
+        document.querySelectorAll('.drop').forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', () => {
+                dropdown.classList.remove('hidden');
+            });
+            dropdown.addEventListener('mouseleave', () => {
+                dropdown.classList.add('hidden');
+            });
+        });
+    </script>
+    <script>
+        let currentSlide = 0;
+        const slides = ['firstimage', 'secondimage', 'thirdimage'];
+
+        function showImage(id) {
+            const element = document.getElementById(id);
+            element.classList.remove('hidden'); // Show the element by removing 'hidden' class
+        }
+
+        function hideImage(id) {
+            const element = document.getElementById(id);
+            element.classList.add('hidden'); // Hide the element by adding 'hidden' class
+        }
+
+        // function changeSlide() {
+        //     hideImage(slides[currentSlide]); // Hide the current slide
+        //     currentSlide = (currentSlide + 1) % slides.length; // Move to the next slide
+        //     showImage(slides[currentSlide]); // Show the next slide
+        // }
+    </script>
+    <script>
+        function scaleimage(id)
+        {
+            document.getElementById(id).classList.add('scale-150');
+        }
+        function resetscale(id) {
+            document.getElementById(id).classList.remove('scale-150');
+        }
+        function hidetext(id)
+        {
+            document.getElementById(id).classList.add('hidden')
+        }
+        function showtext(id)
+        {
+            document.getElementById(id).classList.remove('hidden')
+        }
+    </script>
+</body>
+
+</html>

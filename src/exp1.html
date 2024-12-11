@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="slider">
+        
+        <div id="firstimage" class="h-120 w-full bg-[url('OIP30.png')] bg-no-repeat bg-cover bg-center pt-60 flex flex-col items-center">
+            <span class="text-7xl italic font-bold text-white">Research</span>
+            <div class="h-16 w-16 bg-orange-500 mt-2 rounded-full">
+                <img src="down-arrow.png" class="mt-7 ml-3.5 animate-bounce">
+            </div>
+            <div class="flex absolute gap-x-350">
+                <div onclick="showImage('thirdimage'); hideImage('firstimage')">
+                    <img src="leftarrow.png" alt="">
+                </div>
+                <div onclick="showImage('secondimage'); hideImage('firstimage')">
+                    <img src="rightarrow.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+       
+        <div id="secondimage" class="h-120 w-full bg-[url('OIP31.png')] bg-no-repeat bg-cover bg-top pt-60 hidden">
+            <div class="flex flex-col items-center">
+                <span class="text-7xl italic font-bold text-white">Lead</span>
+                <div class="h-16 w-16 bg-orange-500 mt-2 rounded-full">
+                    <img src="down-arrow.png" class="mt-7 ml-3.5 animate-bounce">
+                </div>
+                <div class="flex absolute gap-x-350">
+                    <div onclick="showImage('firstimage'); hideImage('secondimage')">
+                        <img src="leftarrow.png" alt="">
+                    </div>
+                    <div onclick="showImage('thirdimage'); hideImage('secondimage')">
+                        <img src="rightarrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="thirdimage" class="h-120 w-full bg-[url('OIP32.png')] bg-no-repeat bg-cover bg-top pt-60 hidden">
+            <div class="flex flex-col items-center">
+                <span class="text-7xl italic font-bold text-white">Educate</span>
+                <div class="h-16 w-16 bg-orange-500 mt-2 rounded-full">
+                    <img src="down-arrow.png" class="mt-7 ml-3.5 animate-bounce">
+                </div>
+                <div class="flex absolute gap-x-350">
+                    <div onclick="showImage('secondimage'); hideImage('thirdimage')">
+                        <img src="leftarrow.png" alt="">
+                    </div>
+                    <div onclick="showImage('firstimage'); hideImage('thirdimage')">
+                        <img src="rightarrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <script>
+        let currentSlide = 0;
+        const slides = ['firstimage', 'secondimage', 'thirdimage'];
+    
+        function showImage(id) {
+            const element = document.getElementById(id);
+            element.classList.remove('hidden'); // Show the element by removing 'hidden' class
+        }
+    
+        function hideImage(id) {
+            const element = document.getElementById(id);
+            element.classList.add('hidden'); // Hide the element by adding 'hidden' class
+        }
+    
+        // function changeSlide() {
+        //     hideImage(slides[currentSlide]); // Hide the current slide
+        //     currentSlide = (currentSlide + 1) % slides.length; // Move to the next slide
+        //     showImage(slides[currentSlide]); // Show the next slide
+        // }
+    </script>
+    
+</body>
+</html> 
+
+
+
